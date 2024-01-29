@@ -8,7 +8,7 @@
 
 - **Habilidades:** El apartado de `habilidades` contiene las habilidades y tecnologías en las que me especializo. 
 
-- **Contacto:** ¿Quieres ponerte en contacto conmigo? Puedes encontrar mis datos de contacto en el apartado de  `contacto.md`.
+- **Contacto:** ¿Quieres ponerte en contacto conmigo? Puedes encontrar mis datos de contacto en el apartado de  `contacto`.
 
 ## Cómo explorar
 
