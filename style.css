@@ -1,0 +1,77 @@
+/* En tu archivo style.css */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta según sea necesario para centrar verticalmente */
+  }
+
+  .fotoFG {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    max-width: 200px; /* Establece un ancho máximo para la imagen */
+    border-radius: 10px; /* Añade esquinas redondeadas si lo deseas */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar la imagen del texto */
+  }
+
+ /* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #2d2d2d; /* Cambia el color de fondo para el modo oscuro */
+    color: #ffffff; /* Cambia el color del texto para el modo oscuro */
+  }
+/* Estilos para el modo oscuro */
+.dark-mode-switch {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    background-color: #4d4d4d;
+    border-radius: 15px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-mode-icon,
+  .light-mode-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+ 
+  .dark-mode-container {
+    background-color: #2d2d2d;
+    color: #ffffff;
+  }
+  
+  .dark-mode-container .card {
+    background-color: #1a1a1a;
+  }
+  
+  .dark-mode-container .card-body:not(.text-light) {
+    color: #000000; /* Color del texto cuando no estás en modo oscuro */
+  }
+
+  .dark-mode-container .navbar-custom .navbar-nav .nav-link,
+.dark-mode-container .card-title,
+.dark-mode-container .card-text,
+.dark-mode-container .text-center {
+  color: #ffffff; /* Color blanco para el texto en modo oscuro */
+}
+
+/* Estilos para la barra de navegación en el Modo Oscuro */
+.dark-mode-container .navbar {
+  background-color: #000; /* Fondo negro en modo oscuro */
+}
+
+.dark-mode-container .navbar-light .navbar-brand {
+  color: #fff; /* Texto blanco en modo oscuro */
+}
+
+.dark-mode-container .navbar-light .navbar-toggler-icon {
+  background-color: #fff; /* Icono blanco en modo oscuro */
+}
+
+.dark-mode-container .navbar-light .navbar-nav .nav-link {
+  color: #fff !important; /* Texto blanco en modo oscuro, !important para anular estilos inline */
+}
