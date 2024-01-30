@@ -75,3 +75,9 @@ section {
 .dark-mode-container .navbar-light .navbar-nav .nav-link {
   color: #fff !important; /* Texto blanco en modo oscuro, !important para anular estilos inline */
 }
+
+.dark-mode-card {
+  background-color: #333; /* Cambia el color de fondo en modo oscuro */
+  color: #fff; /* Cambia el color del texto en modo oscuro */
+  /* Agrega cualquier otro estilo específico para modo oscuro aquí */
+}
