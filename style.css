@@ -1,4 +1,21 @@
-/* En tu archivo style.css */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Vazirmatn:wght@300&display=swap');
+
+
+@font-face {
+    font-family: 'Varizmatn', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: 'https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap';
+}
+
+@font-face {
+    font-family: 'Maven Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Vazirmatn:wght@300&display=swap');
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -81,3 +98,4 @@ section {
   color: #fff; /* Cambia el color del texto en modo oscuro */
   /* Agrega cualquier otro estilo específico para modo oscuro aquí */
 }
+  

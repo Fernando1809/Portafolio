@@ -61,4 +61,4 @@ document.addEventListener('DOMContentLoaded', function() {
   // Asignar el evento de clic al interruptor de modo oscuro
   darkModeSwitch.addEventListener('click', toggleDarkMode);
 });
-
+ 
