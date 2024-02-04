@@ -1,29 +1,3 @@
-/* Estilos para la sección de clientes */
-.clients {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-}
-
-/* Estilos para la sección de contacto */
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-  margin-inline-end: 10%;
-  margin-bottom: 20px;
-}
-
-/* Estilos para el footer */
-footer {
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
 /* Estilos generales para las secciones */
 section {
   display: flex;
@@ -42,7 +16,9 @@ section {
 }
 
 /* Estilos para el modo oscuro */
-.dark-mode {
+.dark-mode,
+.dark-mode-container,
+.dark-mode-card {
   background-color: #2d2d2d;
   color: #ffffff;
 }
@@ -108,7 +84,7 @@ section {
   /* Agrega cualquier otro estilo específico para modo oscuro aquí */
 }
 
-
+/* Redes Sociales */
 .social-networks a {
   display: inline-flex;
   color: #ffffff;
@@ -151,4 +127,60 @@ section {
   background-color: #25D366; /* Verde característico de WhatsApp */
 }
 
+.clients i {
+  transition: color 0.3s ease-in-out;
+}
 
+.clients .js i:hover {
+  color: #F7DF1E; /* Color amarillo de JavaScript */
+}
+
+.clients .css i:hover {
+  color: #1572B6; /* Color azul de CSS */
+}
+
+.clients .html i:hover {
+  color: #E34F26; /* Color naranja de HTML */
+}
+
+.clients .python i:hover {
+  color: #3776AB; /* Color azul de Python */
+}
+
+.clients .php i:hover {
+  color: #777BB4; /* Color morado de PHP */
+}
+
+/* Definición de la animación fadeIn */
+@keyframes fadeIn {
+  from {
+     opacity: 0;
+  }
+  to {
+     opacity: 1;
+  }
+}
+
+/* Aplicar la animación a un elemento específico, por ejemplo, el mensaje de bienvenida */
+.welcome-message {
+  animation: fadeIn 1s ease;
+}
+
+
+/* Agrega un estilo básico al botón de regreso */
+#btnHome {
+  display: none;
+}
+
+#btnHome a {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btnHome a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

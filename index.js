@@ -6,9 +6,21 @@ function checkScrollPosition() {
   
     var scrollPosition = window.scrollY || document.documentElement.scrollTop;
   
-    // Muestra u oculta el botón de inicio
-    btnHome.style.display = scrollPosition >= aboutSection.offsetTop ? 'block' : 'none';
-  
+// Función para mostrar/ocultar el botón de regreso al hacer scroll
+function checkScrollPositionForButton() {
+  var btnHome = document.getElementById('btnHome');
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  // Muestra u oculta el botón de regreso
+  btnHome.style.display = scrollPosition > window.innerHeight ? 'block' : 'none';
+}
+
+// Evento de desplazamiento para verificar la posición y mostrar/ocultar el botón de regreso
+window.addEventListener('scroll', checkScrollPositionForButton);
+
+// Llama a la función inicialmente para configurar el botón en la carga de la página
+checkScrollPositionForButton();
+ 
     // Calcula la edad y actualiza el span correspondiente
     var fechaNacimiento = new Date('2001-09-18');
     var hoy = new Date();
@@ -49,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     darkModeSwitch.classList.toggle('dark-mode-switch');
     // Cambiar el ícono según el modo actual
     modeIcon.textContent = body.classList.contains('dark-mode-container') ? '🌙' : '☀️';
+
     // Almacenar el modo actual en localStorage
     localStorage.setItem('darkMode', body.classList.contains('dark-mode-container') ? 'enabled' : 'disabled');
   }
