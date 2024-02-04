@@ -1,101 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Vazirmatn:wght@300&display=swap');
-
-
-@font-face {
-    font-family: 'Varizmatn', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    src: 'https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap';
+/* Estilos para la sección de clientes */
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
 }
 
-@font-face {
-    font-family: 'Maven Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Vazirmatn:wght@300&display=swap');
+/* Estilos para la sección de contacto */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  margin-inline-end: 10%;
+  margin-bottom: 20px;
 }
 
+/* Estilos para el footer */
+footer {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Estilos generales para las secciones */
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ajusta según sea necesario para centrar verticalmente */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-  .fotoFG {
-    width: 100%; /* Ajusta el ancho según sea necesario */
-    max-width: 200px; /* Establece un ancho máximo para la imagen */
-    border-radius: 10px; /* Añade esquinas redondeadas si lo deseas */
-    margin-bottom: 20px; /* Agrega un margen inferior para separar la imagen del texto */
-  }
+/* Estilos para la imagen de biografía */
+.fotoFG {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
- /* Estilos para el modo oscuro */
-.dark-mode {
-    background-color: #2d2d2d; /* Cambia el color de fondo para el modo oscuro */
-    color: #ffffff; /* Cambia el color del texto para el modo oscuro */
-  }
 /* Estilos para el modo oscuro */
-.dark-mode-switch {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 30px;
-    height: 30px;
-    background-color: #4d4d4d;
-    border-radius: 15px;
-    padding: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dark-mode-icon,
-  .light-mode-icon {
-    font-size: 20px;
-    color: #ffffff;
-  }
- 
-  .dark-mode-container {
-    background-color: #2d2d2d;
-    color: #ffffff;
-  }
-  
-  .dark-mode-container .card {
-    background-color: #1a1a1a;
-  }
-  
-  .dark-mode-container .card-body:not(.text-light) {
-    color: #000000; /* Color del texto cuando no estás en modo oscuro */
-  }
+.dark-mode {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
 
-  .dark-mode-container .navbar-custom .navbar-nav .nav-link,
+.dark-mode-switch {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  background-color: #4d4d4d;
+  border-radius: 15px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-icon,
+.light-mode-icon {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.dark-mode-container {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.dark-mode-container .card {
+  background-color: #1a1a1a;
+}
+
+.dark-mode-container .card-body:not(.text-light) {
+  color: #000000;
+}
+
+.dark-mode-container .navbar-custom .navbar-nav .nav-link,
 .dark-mode-container .card-title,
 .dark-mode-container .card-text,
 .dark-mode-container .text-center {
-  color: #ffffff; /* Color blanco para el texto en modo oscuro */
+  color: #ffffff;
 }
 
-/* Estilos para la barra de navegación en el Modo Oscuro */
 .dark-mode-container .navbar {
-  background-color: #000; /* Fondo negro en modo oscuro */
+  background-color: #000;
 }
 
 .dark-mode-container .navbar-light .navbar-brand {
-  color: #fff; /* Texto blanco en modo oscuro */
+  color: #fff;
 }
 
 .dark-mode-container .navbar-light .navbar-toggler-icon {
-  background-color: #fff; /* Icono blanco en modo oscuro */
+  background-color: #fff;
 }
 
 .dark-mode-container .navbar-light .navbar-nav .nav-link {
-  color: #fff !important; /* Texto blanco en modo oscuro, !important para anular estilos inline */
+  color: #fff !important;
 }
 
 .dark-mode-card {
-  background-color: #333; /* Cambia el color de fondo en modo oscuro */
-  color: #fff; /* Cambia el color del texto en modo oscuro */
+  background-color: #333;
+  color: #fff;
   /* Agrega cualquier otro estilo específico para modo oscuro aquí */
 }
-  
+
+
+.social-networks a {
+  display: inline-flex;
+  color: #ffffff;
+  height: 48px;
+  width: 48px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 6px;
+  transition: transform 0.4s;
+  align-items: center;
+}
+
+.social-networks a:hover {
+  transform: scale(1.3);
+}
+
+.social-networks a.facebook {
+  background-color: #3c70a4;
+}
+
+.social-networks a.twitter {
+  background-color: #5bd1d7;
+}
+
+.social-networks a.google {
+  background-color: #ee4540;
+}
+
+.social-networks a.linkedin {
+  background-color: #007bb5; /* Cambiar a tu color preferido para LinkedIn */
+}
+
+.social-networks a.instagram {
+  background-color: #E4405F; /* Morado/rojo violáceo de Instagram */
+}
+
+.social-networks a.whatsapp {
+  background-color: #25D366; /* Verde característico de WhatsApp */
+}
+
+
