@@ -15,3 +15,7 @@
 Si eres nuevo aquí, te recomiendo que comiences por la carpeta de `proyectos` para ver ejemplos concretos de mi trabajo.
 
 ¡Gracias por visitar mi repositorio de portafolio! Espero que encuentres interesante mi trabajo y que podamos colaborar en el futuro.
+
+##LINK
+
+aqui tienes el link para que puedes visualizarlo: https://fernando1809.github.io/Portafolio/
