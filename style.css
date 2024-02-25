@@ -7,6 +7,7 @@ section {
   height: 100vh;
 }
 
+
 /* Estilos para la imagen de biografía */
 .fotoFG {
   width: 100%;
@@ -15,13 +16,6 @@ section {
   margin-bottom: 20px;
 }
 
-/* Estilos para el modo oscuro */
-.dark-mode,
-.dark-mode-container,
-.dark-mode-card {
-  background-color: #2d2d2d;
-  color: #ffffff;
-}
 
 .dark-mode-switch {
   cursor: pointer;
@@ -84,73 +78,6 @@ section {
   /* Agrega cualquier otro estilo específico para modo oscuro aquí */
 }
 
-/* Redes Sociales */
-.social-networks a {
-  display: inline-flex;
-  color: #ffffff;
-  height: 48px;
-  width: 48px;
-  background-color: #000000;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  margin: 0 6px;
-  transition: transform 0.4s;
-  align-items: center;
-}
-
-.social-networks a:hover {
-  transform: scale(1.3);
-}
-
-.social-networks a.facebook {
-  background-color: #3c70a4;
-}
-
-.social-networks a.twitter {
-  background-color: #5bd1d7;
-}
-
-.social-networks a.google {
-  background-color: #ee4540;
-}
-
-.social-networks a.linkedin {
-  background-color: #007bb5; /* Cambiar a tu color preferido para LinkedIn */
-}
-
-.social-networks a.instagram {
-  background-color: #E4405F; /* Morado/rojo violáceo de Instagram */
-}
-
-.social-networks a.whatsapp {
-  background-color: #25D366; /* Verde característico de WhatsApp */
-}
-
-.clients i {
-  transition: color 0.3s ease-in-out;
-}
-
-.clients .js i:hover {
-  color: #F7DF1E; /* Color amarillo de JavaScript */
-}
-
-.clients .css i:hover {
-  color: #1572B6; /* Color azul de CSS */
-}
-
-.clients .html i:hover {
-  color: #E34F26; /* Color naranja de HTML */
-}
-
-.clients .python i:hover {
-  color: #3776AB; /* Color azul de Python */
-}
-
-.clients .php i:hover {
-  color: #777BB4; /* Color morado de PHP */
-}
-
 /* Definición de la animación fadeIn */
 @keyframes fadeIn {
   from {
@@ -175,12 +102,78 @@ section {
 #btnHome a {
   border-radius: 50%;
   padding: 10px;
-  background-color: #fff;
+  background-color: #0a06ff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #btnHome a:hover {
-  background-color: #f0f0f0;
+  background-color: #8408e9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 30px 15px 30px 0 ;
+  transition: .5s ease;
+}
+ 
+.social-media a:hover {
+  color: #1f242d;
+  box-shadow: 0 0 20pxrgb(255, 0, 0);
+}
+
+.bx.bxl-facebook:hover {
+  color: #1877f2; /* Color de Facebook */
+}
+.bx.bxl-instagram:hover {
+  color: #c13584; /* Color de Instagram */
+}
+.bx.bxl-twitter:hover {
+  color: #1da1f2; /* Color de Twitter */
+}
+.bx.bxl-whatsapp:hover {
+  color: #25d366; /* Color de WhatsApp */
+}
+.bx.bxl-linkedin:hover {
+  color: #0077b5; /* Color de LinkedIn */
+}
+.bx.bxl-google:hover {
+  color: #db4437; /* Color de Google */
+}
+.bx.bxl-github:hover {
+  color: #4078c0; /* Color de GitHub */
+}
+
+.clients i {
+  transition: color 0.3s ease-in-out;
+}
+
+.clients .js i:hover {
+  color: #F7DF1E; /* Color amarillo de JavaScript */
+}
+
+.clients .css i:hover {
+  color: #1572B6; /* Color azul de CSS */
+}
+
+.clients .html i:hover {
+  color: #E34F26; /* Color naranja de HTML */
+}
+
+.clients .python i:hover {
+  color: #3776AB; /* Color azul de Python */
+}
+
+.clients .php i:hover {
+  color: #777BB4; /* Color morado de PHP */
 }

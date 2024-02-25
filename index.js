@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Verificar el modo actual almacenado en localStorage o establecer el modo claro por defecto
   var darkMode = localStorage.getItem('darkMode');
   var body = document.getElementById('bodyContainer');
+  var navbarBrand = document.querySelector('.navbar-brand');
   var darkModeSwitch = document.getElementById('darkModeSwitch');
   var modeIcon = document.getElementById('modeIcon');
 
