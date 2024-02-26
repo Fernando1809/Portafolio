@@ -81,10 +81,11 @@ section {
 /* Definición de la animación fadeIn */
 @keyframes fadeIn {
   from {
-     opacity: 0;
+    opacity: 0;
   }
+
   to {
-     opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -123,35 +124,48 @@ section {
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
-  margin: 30px 15px 30px 0 ;
+  margin: 30px 15px 30px 0;
   transition: .5s ease;
 }
- 
+
 .social-media a:hover {
   color: #1f242d;
   box-shadow: 0 0 20pxrgb(255, 0, 0);
 }
 
 .bx.bxl-facebook:hover {
-  color: #1877f2; /* Color de Facebook */
+  color: #1877f2;
+  /* Color de Facebook */
 }
+
 .bx.bxl-instagram:hover {
-  color: #c13584; /* Color de Instagram */
+  color: #c13584;
+  /* Color de Instagram */
 }
+
 .bx.bxl-twitter:hover {
-  color: #1da1f2; /* Color de Twitter */
+  color: #1da1f2;
+  /* Color de Twitter */
 }
+
 .bx.bxl-whatsapp:hover {
-  color: #25d366; /* Color de WhatsApp */
+  color: #25d366;
+  /* Color de WhatsApp */
 }
+
 .bx.bxl-linkedin:hover {
-  color: #0077b5; /* Color de LinkedIn */
+  color: #0077b5;
+  /* Color de LinkedIn */
 }
+
 .bx.bxl-google:hover {
-  color: #db4437; /* Color de Google */
+  color: #db4437;
+  /* Color de Google */
 }
+
 .bx.bxl-github:hover {
-  color: #4078c0; /* Color de GitHub */
+  color: #4078c0;
+  /* Color de GitHub */
 }
 
 .clients i {
@@ -159,21 +173,26 @@ section {
 }
 
 .clients .js i:hover {
-  color: #F7DF1E; /* Color amarillo de JavaScript */
+  color: #F7DF1E;
+  /* Color amarillo de JavaScript */
 }
 
 .clients .css i:hover {
-  color: #1572B6; /* Color azul de CSS */
+  color: #1572B6;
+  /* Color azul de CSS */
 }
 
 .clients .html i:hover {
-  color: #E34F26; /* Color naranja de HTML */
+  color: #E34F26;
+  /* Color naranja de HTML */
 }
 
 .clients .python i:hover {
-  color: #3776AB; /* Color azul de Python */
+  color: #3776AB;
+  /* Color azul de Python */
 }
 
 .clients .php i:hover {
-  color: #777BB4; /* Color morado de PHP */
+  color: #777BB4;
+  /* Color morado de PHP */
 }
