@@ -196,3 +196,6 @@ section {
   color: #777BB4;
   /* Color morado de PHP */
 }
+.rounded-img {
+  border-radius: 50%;
+}
