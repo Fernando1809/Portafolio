@@ -91,3 +91,27 @@ function descargarArchivo() {
 }
 
 document.getElementById('downloadButton').addEventListener('click', descargarArchivo);
+function updateNavbarColor() {
+  const navbar = document.getElementById("navbar");
+  const darkModeSwitch = document.getElementById("darkModeSwitch");
+  const modeIcon = document.getElementById("modeIcon");
+
+  if (document.body.classList.contains("dark-mode")) {
+      // Si está en modo oscuro, cambia las clases del navbar a 'navbar-dark'
+      navbar.classList.remove("navbar-light");
+      navbar.classList.add("navbar-dark");
+      // Cambia el color del icono del modo a claro
+      modeIcon.classList.remove("light-mode-icon");
+      modeIcon.classList.add("dark-mode-icon");
+  } else {
+      // Si está en modo claro, cambia las clases del navbar a 'navbar-light'
+      navbar.classList.remove("navbar-dark");
+      navbar.classList.add("navbar-light");
+      // Cambia el color del icono del modo a oscuro
+      modeIcon.classList.remove("dark-mode-icon");
+      modeIcon.classList.add("light-mode-icon");
+  }
+}
+
+// Llama a la función para que se ejecute cuando se cargue la página
+updateNavbarColor();
