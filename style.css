@@ -4,6 +4,10 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* height: 100vh; */
+}
+
+.section-altura{
   height: 100vh;
 }
 
@@ -198,4 +202,10 @@ section {
 }
 .rounded-img {
   border-radius: 50%;
+}
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand img {
+  width: 40px; /* Tamaño del logo */
+  height: 40px; /* Tamaño del logo */
+  border-radius: 50%; /* Forma circular */
 }
