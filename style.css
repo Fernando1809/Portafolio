@@ -461,59 +461,26 @@ p {
 }
 
 .social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid;
-  border-radius: 50%;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 30px 15px 30px 0;
-  transition: .5s ease;
-}
-
-.social-media a:hover {
-  color: #db4437;
-  box-shadow: 0 0 20pxrgb(255, 0, 0);
-}
-
-.bx.bxl-facebook:hover {
-  color: #1877f2;
-  /* Color de Facebook */
-}
-
-.bx.bxl-instagram:hover {
-  color: #c13584;
-  /* Color de Instagram */
-}
-
-.bx.bxl-twitter:hover {
-  color: #1da1f2;
-  /* Color de Twitter */
-}
-
-.bx.bxl-whatsapp:hover {
-  color: #25d366;
-  /* Color de WhatsApp */
-}
-
-.bx.bxl-linkedin:hover {
-  color: #0077b5;
-  /* Color de LinkedIn */
-}
-
-.bx.bxl-google:hover {
-  color: #db4437;
-  /* Color de Google */
-}
-
-.bx.bxl-github:hover {
-  color: #4078c0;
-  /* Color de GitHub */
-}
+    display: inline-flex;
+    justify-content: center;    
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    margin: 30px 15px 30px 0 ;
+    transition: .5s ease;
+  }
+   
+  .social-media a:hover {
+    background: rgb(255, 0, 0);
+    color: #1f242d;
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+  }
 
 .clients i {
   transition: color 0.3s ease-in-out;
