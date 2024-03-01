@@ -75,9 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Asignar el evento de clic al interruptor de modo oscuro
   darkModeSwitch.addEventListener('click', toggleDarkMode);
 });
-
 function descargarArchivo() {
-  var url = 'Archivos/CV.pdf';
+  var url = 'cv/CV.pdf';
 
   var link = document.createElement('a');
   link.href = url;
@@ -90,3 +89,4 @@ function descargarArchivo() {
   document.body.removeChild(link);
 }
 
+document.getElementById('downloadButton').addEventListener('click', descargarArchivo);

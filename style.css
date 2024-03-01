@@ -1,103 +1,446 @@
-/* Estilos generales para las secciones */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Vazirmatn:wght@300&display=swap');
+
+
+@font-face {
+    font-family: 'Varizmatn', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: 'https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap';
+}
+
+@font-face {
+    font-family: 'Maven Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Vazirmatn:wght@300&display=swap');
+}
+
+* {
+    margin: auto;
+    padding: 1.4;
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+body {
+  flex-direction: row;
+  --primary-color: #000;
+  --red: #fa0303;
+  --invers: #f0e9f2;
+  --secondary-color: #f0e9f2;
+  --secondary-color-1: #e5e5e6da;
+  transition: 0.4s;
+}
+}
+
+:root {
+    color-scheme: dark auto light;
+    --background-color: var(--primary-color);
+    --font-size-small: 1.8rem;
+    --font-size-normal: 2.2rem;
+    --font-size-medium: 2.8rem;
+    --font-size-medium-1: 3.6rem;
+    --font-size-large: 5.5rem;
+    --font-size-huge: 7.5rem;
+    --font-stack: 'Varizmatn', sans-serif;
+
+    --line-height-normal: 1.7;
+    --line-height-small: 1.2;
+
+
+    --container-max-width: 1180px;
+    --container-normal-width: 800px;
+    --container-medium-width: 700px;
+    --container-small-width: 500px;
+
+    --gutter-huge: 12rem;
+    --gutter-medium: 6rem;
+    --gutter-normal: 3rem;
+    --gutter-small-1: 2.5rem;
+    --gutter-small: 2rem;
+    --border-light: 1px solid rgb(104, 101, 101);
+    flex-direction: column;
+    transition: .4s;
+
+}
+
+.img-place {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.img-place img {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+.bg-img {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img>* {
+    position: relative;
+    z-index: 10;
+}
+
+.bg-img-parallax {
+    background-attachment: fixed;
+}
+
+.bg-img-overlay-dark {
+    position: relative;
+}
+
+.bg-img-overlay-dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #33374B;
+}
+
+.bg-img-size-contain {
+    background-size: contain;
+}
+
+.bg-img-size-100 {
+    background-size: 100% 100%;
+}
+
+
+#span {
+    color: var(--secondary-color);
+    margin-right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+
+#span:hover {
+    color: var(--pink)
+}
+
+.red {
+    background-color: var(--pinki)
+}
+
+
+.glowing-circle {
+    margin-bottom: var(--gutter-normal);
+
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 1000px) {
+    html {
+        font-size: 52%;
+        position: absolute;
+
+    }
+}
+
+body {
+    margin-top: calc(100vh + var(--offset));
+    font-size: var(--font-size-small);
+    font-family: var(--font-stack);
+    font-weight: 400;
+    color: var(--secondary-color-1);
+    line-height: var(--line-height-normal);
+    background: var(--primary-color);
+    overflow-x: hidden;
+    transition: .4s;
+
+}
+
+
+.row {
+    position: relative;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1340px) {
+
+    .row {
+        position: relative;
+        max-width: 1100px;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .row {
+        position: relative;
+        padding: 0 var(--gutter-medium);
+        overflow-x: hidden;
+    }
+    .container-test img{
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        padding: 30 var(--gutter-medium);
+        position: relative;
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+    .container-test img{
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .row {
+        padding: 20 var(--gutter-small);
+        position: relative;
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+    .container-test {
+        text-align: center;
+      }
+      .container-test img{
+          width: 90px;
+      }
+}
+
+@media screen and (max-width: 360px) {
+    .row {
+        padding: 10 var(--gutter-small);
+        position: relative;
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+    .container-test img{
+        width: 80px;
+    }
+}
+
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* height: 100vh; */
+    padding: var(--gutter-huge) 0;
+ 
 }
 
-.section-altura{
-  height: 100vh;
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    line-height: var(--line-height-small);
+    color: var(--secondary-color);
+}
+
+.heading-primary {
+    line-height: 1;
+    font-size: var(--font-size-huge);
+    font-weight: 400;
+}
+
+@media(max-width: 900px) {
+    .heading-primary {
+        font-size: 6.5rem;
+    }
+}
+
+h2 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gutter-medium);
+}
+
+h2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
 }
 
 
-/* Estilos para la imagen de biografía */
-.fotoFG {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+
+p {
+    margin: var(--gutter-small-1) 0;
+}
+
+@media screen and (max-width: 900px) {
+    p {
+        max-width: var(--container-small-width);
+    }
 }
 
 
-.dark-mode-switch {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 30px;
-  height: 30px;
-  background-color: #4d4d4d;
-  border-radius: 15px;
-  padding: 5px;
-  transition: background-color 0.3s ease;
+@media screen and (max-width: 900px) {
+    .back-to-top {
+        right: 2rem;
+    }
 }
 
-.dark-mode-icon,
-.light-mode-icon {
-  font-size: 20px;
-  color: #ffffff;
+@media screen and (max-width: 500px) {
+    .back-to-top {
+        right: 1rem;
+    }
 }
 
-.dark-mode-container {
-  background-color: #2d2d2d;
-  color: #ffffff;
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: var(--gutter-normal) 0;
 }
 
-.dark-mode-container .card {
-  background-color: #1a1a1a;
+.nav__items {
+    display: flex;
+    list-style: none;
 }
 
-.dark-mode-container .card-body:not(.text-light) {
-  color: #000000;
+.nav__item:not(:last-child) {
+    margin-right: var(--gutter-medium);
 }
 
-.dark-mode-container .navbar-custom .navbar-nav .nav-link,
-.dark-mode-container .card-title,
-.dark-mode-container .card-text,
-.dark-mode-container .text-center {
-  color: #ffffff;
+@media screen and (max-width: 500px) {
+    .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
-.dark-mode-container .navbar {
-  background-color: #000;
+@media screen and (max-width: 400px) {
+    .nav__item:not(:last-child) {
+        margin-right: var(--gutter-normal);
+    }
 }
 
-.dark-mode-container .navbar-light .navbar-brand {
-  color: #fff;
+@media screen and (max-width: 300px) {
+    .nav {
+        font-size: var(--font-size-small);
+    }
 }
 
-.dark-mode-container .navbar-light .navbar-toggler-icon {
-  background-color: #fff;
+.nav__link {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s;
 }
 
-.dark-mode-container .navbar-light .navbar-nav .nav-link {
-  color: #fff !important;
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 1rem;
+    background: var(--secondary-color);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
-.dark-mode-card {
-  background-color: #333;
-  color: #fff;
-  /* Agrega cualquier otro estilo específico para modo oscuro aquí */
+.nav__link:hover {
+    color: var(--pink);
 }
 
-/* Definición de la animación fadeIn */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.nav__link:hover::after {
+    right: 0;
+    height: 2px;
+    background: var(--pink);
 }
 
-/* Aplicar la animación a un elemento específico, por ejemplo, el mensaje de bienvenida */
-.welcome-message {
-  animation: fadeIn 1s ease;
+.header {
+    background: linear-gradient(rgba(44, 44, 44, 0), rgba(131, 131, 131, 0));
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
 }
 
+
+.header__text {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__text p {
+    margin: 1.5rem 0 3.5rem;
+    max-width: var(--container-small-width);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: var(--font-size-small);
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        text-align: center;
+    }
+
+    .header__text p {
+        transform: scale(.8);
+    }
+}
+
+.about__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .about__content {
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
+}
+
+.about__photo-container {
+    margin-bottom: var(--gutter-normal);
+}
+
+@media screen and (min-width: 901px) {
+    .about__text {
+        flex: 0 0 35%;
+    }
+
+    .about__photo-container {
+        flex: 1;
+        margin: 0 var(--gutter-huge) 0 0;
+        cursor: pointer;
+        transition: all ease-out 0.2s;
+    }
+
+}
 
 /* Agrega un estilo básico al botón de regreso */
 #btnHome {
@@ -107,13 +450,13 @@ section {
 #btnHome a {
   border-radius: 50%;
   padding: 10px;
-  background-color: #0a06ff;
+  background-color: #ff0606;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #btnHome a:hover {
-  background-color: #8408e9;
+  background-color: #e90893;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -133,7 +476,7 @@ section {
 }
 
 .social-media a:hover {
-  color: #1f242d;
+  color: #db4437;
   box-shadow: 0 0 20pxrgb(255, 0, 0);
 }
 
@@ -202,10 +545,4 @@ section {
 }
 .rounded-img {
   border-radius: 50%;
-}
-/* Estilos para el logo en la barra de navegación */
-.navbar-brand img {
-  width: 40px; /* Tamaño del logo */
-  height: 40px; /* Tamaño del logo */
-  border-radius: 50%; /* Forma circular */
 }
