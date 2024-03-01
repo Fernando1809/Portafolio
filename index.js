@@ -76,8 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
   darkModeSwitch.addEventListener('click', toggleDarkMode);
 });
 function descargarArchivo() {
-  var url = 'cv/CV.pdf';
-
+  var url = './cv/CV.pdf';
   var link = document.createElement('a');
   link.href = url;
   link.download = 'CV.pdf';
